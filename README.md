@@ -17,5 +17,9 @@ It has facilities like
 
 ###RSS Feed Slideshow###
 
+The RSS Slide Show Display The feed Content in Presentation form You have navigation Buttons To Move from slide to slide.
+
+Enjoy
+
 
 
