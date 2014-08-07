@@ -70,7 +70,7 @@
 			$('.paulund_inner_modal_box').css({
 				'background-color':'#fff',
 				'height':(options.height - 50) + 'px',
-				'width':(options.width - 50) + 'px',
+				'width':(options.width - 30) + 'px',
 				'padding':'10px',
 				'margin':'15px',
 				'border-radius':'10px',
@@ -86,9 +86,8 @@
 		}
 		 		
 		 function add_popup_box(){
-			 var pop_up = $('<div class="paulund_modal_box"><a href="#" class="paulund_modal_close"></a><div class="paulund_inner_modal_box"><h2><center>'
-			 + options.title +
-			 '</center></h2><p>' + options.description + '<style>input[type="text"]{  border: 1px solid #ccc;  border-radius: 3px;  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);  width:200px;  min-height: 28px;  padding: 4px 20px 4px 8px;  font-size: 12px;  -moz-transition: all .2s linear;  -webkit-transition: all .2s linear;  transition: all .2s linear;}input[type="text"]:focus{  width: 300px;  border-color: #51a7e8;  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1),0 0 5px rgba(81,167,232,0.5);  outline: none;}</style><input type="text" id="txturl" name="url" size="35">'+
+			 var pop_up = $('<div class="paulund_modal_box"><a href="#" class="paulund_modal_close"></a><div class="paulund_inner_modal_box"><center><h3>'
+			 + options.title+'</center></h3>'+options.description + '<style>input[type="text"]{  border: 1px solid #ccc;  border-radius: 3px;  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);  width:200px;  min-height: 28px;  padding: 4px 20px 4px 8px;  font-size: 12px;  -moz-transition: all .2s linear;  -webkit-transition: all .2s linear;  transition: all .2s linear;}input[type="text"]:focus{  width: 300px;  border-color: #51a7e8;  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1),0 0 5px rgba(81,167,232,0.5);  outline: none;}</style><input type="text" id="txturl" name="url" size="35">'+
 			 '<style>button{cursor:pointer;padding:4px 10px;background:#35b128;border:1px solid #33842a;-moz-border-radius: 10px;-webkit-border-radius: 10px;border-radius: 10px;/*give the button a drop shadow*/-webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);-moz-box-shadow: 0 0 4px rgba(0,0,0, .75);box-shadow: 0 0 4px rgba(0,0,0, .75);/*style the text*/color:#f3f3f3;font-size:1.1em;}'+
 			 'button:focus{background-color :#399630;-webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);-moz-box-shadow: 0 0 1px rgba(0,0,0, .75); box-shadow: 0 0 1px rgba(0,0,0, .75);}</style><button id="check">?</button><br>'+
 			 '</h2><center>or</center><p>' + options.description1 + '<style>input[type="text"]{  border: 1px solid #ccc;  border-radius: 3px;  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);  width:200px;  min-height: 28px;  padding: 4px 20px 4px 8px;  font-size: 12px;  -moz-transition: all .2s linear;  -webkit-transition: all .2s linear;  transition: all .2s linear;}input[type="text"]:focus{  width: 300px;  border-color: #51a7e8;  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1),0 0 5px rgba(81,167,232,0.5);  outline: none;}</style><input type="text" id="txtfeed" name="feedurl" size="35"><br>'+
@@ -136,7 +135,7 @@
 				
 			$(document).ready(function(){
                           $("#insert").click(function(){
-                                      alert("Insert site");
+                                      alert("Wait Few seconds for URL List get Updating....");
 					  
 					var feed_url = document.getElementById("txtfeed").value;  
 					if(feed_url && feed_url!="Waiting..."){

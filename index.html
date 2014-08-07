@@ -1,278 +1,365 @@
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
-<meta name="description" content="Liquid Slider : The Last Responsive Content Slider You'll Ever Need" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta content="width=device-width, initial-scale=1" name="viewport" /> 
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>RSS Feed Reader</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Bootstrap -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+	  
+	  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	  
+	  
+	  <style type="text/css">
+		h1{
+			margin: 0;     
+			color: #666;
+			padding-top: 90px;
+			font-size: 52px;
+			font-family: "trebuchet ms", sans-serif;    
+		}
+                .item{
+			background: #333;    
+			text-align: center;
+    
+			height:auto; min-height:500px;
+	
+		}
+		.carousel{
+			margin-top: 20px;
+		}
+		.bs-example{
+			margin: 20px;
+		}
+		.carousel-caption {
+			top: 0;
+			bottom: auto;
+		}
+		</style>  
+	  
 
-<link href="template.css" rel="stylesheet" />
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media 
+         queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page 
+         via file:// -->
+      <!--[if lt IE 9]>
+         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/
+            html5shiv.js"></script>
+         <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/
+            respond.min.js"></script>
+      <![endif]-->
+   
+   </head>
+	<body>
+		<div class="container">
+			<center><h2 id="display_caption">Select The URL From List</h2></center>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>   
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script> 
-<script src="./js/jquery.liquid-slider.min.js"></script>
-<script src="jquery.paulund_modal_box.js"></script>
+		<div class="row">
 
-
- 
- 
-<script>
-var a=10;//just fun
-</script>
-<header id="hd">
-<center><h4>SELECT THE FEED FROM URL LIST</h4></center>
-</header>
-
-<div id="container">         
-<article>
-
-
-  			 <!-- Optionally use Animate.css -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css" />
-<link rel="stylesheet" href="./css/liquid-slider.css" />
-<div id="main-slider" class="liquid-slider">
-<div id="1">
-<h2 class="title"></h2>
-<a id="title1"  href="" style="text-decoration:none;"><strong><h2><center><p id="1title">TITLE</p></center></h2></strong></a>
-<a id="img1" href="" style="text-decoration:none;"><img id="1img"  align="left" src="images/loading83.gif" ></img></a>
-<p id="desc1">Description</p>
-<small><em><p id="pdate1" align="right">Posted Date</p></small></em>
-</div>
-
-
-<div id="2">
-<h2 class="title"></h2>
-<a id="title2"  href="" style="text-decoration:none;"><strong><h2><center><p id="2title">TITLE</p></center></h2></strong></a>
-<a id="img2" href="" style="text-decoration:none;"><img id="2img"  align="left" src="images/loading83.gif" ></img></a>
-<p id="desc2">Description</p>
-<small><em><p id="pdate2" align="right">Posted Date</p></small></em>
-</div>
-
-
-
-
-<div id="3">
-<h2 class="title"></h2>
-<a id="title3"  href="" style="text-decoration:none;"><strong><h2><center><p id="3title">TITLE</p></center></h2></strong></a>
-<a id="img3" href="" style="text-decoration:none;"><img id="3img"  align="left" src="images/loading83.gif" ></img></a>
-<p id="desc3">Description</p>
-<small><em><p id="pdate3" align="right">Posted Date</p></small></em>
-</div>
-
-
-
-
-<div id="4">
-<h2 class="title"></h2>
-<a id="title4"  href="" style="text-decoration:none;"><strong><h2><center><p id="4title">TITLE</p></center></h2></strong></a>
-<a id="img4" href="" style="text-decoration:none;"><img id="4img"  align="left" src="images/loading83.gif" ></img></a>
-<p id="desc4">Description</p>
-<small><em><p id="pdate4" align="right">Posted Date</p></small></em>
-</div>
-
-
-
-<div id="5">
-<h2 class="title"></h2>
-<a id="title5"  href="" style="text-decoration:none;"><strong><h2><center><p id="5title">TITLE</p></center></h2></strong></a>
-<a id="img5" href="" style="text-decoration:none;"><img id="5img"  align="left" src="images/loading83.gif" ></img></a>
-<p id="desc5">Description</p>
-<small><em><p id="pdate5" align="right">Posted Date</p></small></em>
-</div>
-
-<div id="6">
-<h2 class="title"></h2>
-<a id="title6"  href="" style="text-decoration:none;"><strong><h2><center><p id="6title">TITLE</p></center></h2></strong></a>
-<a id="img6" href="" style="text-decoration:none;"><img id="6img"  align="left" src="images/loading83.gif" ></img></a>
-<p id="desc6">Description</p>
-<small><em><p id="pdate6" align="right">Posted Date</p></small></em>
-</div> 
-
-<div id="7">
-<h2 class="title"></h2>
-<a id="title7"  href="" style="text-decoration:none;"><strong><h2><center><p id="7title">TITLE</p></center></h2></strong></a>
-<a id="img7" href="" style="text-decoration:none;"><img id="7img"  align="left" src="images/loading83.gif" ></img></a>
-<p id="desc7">Description</p>
-<small><em><p id="pdate7" align="right">Posted Date</p></small></em>
-</div>
-
-<div id="8">
-<h2 class="title"></h2>
-<a id="title8"  href="" style="text-decoration:none;"><strong><h2><center><p id="8title">TITLE</p></center></h2></strong></a>
-<a id="img8" href="" style="text-decoration:none;"><img id="8img"  align="left" src="images/loading83.gif" ></img></a>
-<p id="desc8">Description</p>
-<small><em><p id="pdate8" align="right">Posted Date</p></small></em>
-</div>
-
-<div id="9">
-<h2 class="title"></h2>
-<a id="title9"  href="" style="text-decoration:none;"><strong><h2><center><p id="9title">TITLE</p></center></h2></strong></a>
-<a id="img9" href="" style="text-decoration:none;"><img id="9img"  align="left" src="images/loading83.gif" ></img></a>
-<p id="desc9">Description</p>
-<small><em><p id="pdate9" align="right">Posted Date</p></small></em>
-</div>
-
-<div id="10">
-<h2 class="title"></h2>
-<a id="title10"  href="" style="text-decoration:none;"><strong><h2><center><p id="10title">TITLE</p></center></h2></strong></a>
-<a id="img10" href="" style="text-decoration:none;"><img id="10img"  align="left" src="images/loading83.gif" ></img></a>
-<p id="desc10">Description</p>
-<small><em><p id="pdate10" align="right">Posted Date</p></small></em>
-</div>
-
-<div id="11">
-<h2 class="title"></h2>
-<strong><h2><center><p id="11title">END</p></center></h2></strong>
-<img src="images/end.png"></img>
-</div>
-
-</div>
+			<div class="col-sm-9 col-md-6 col-lg-3"  
+				style="background-color: #dedef8; 
+				box-shadow: inset 1px -1px 1px #444, 
+				inset -1px 1px 1px #444; height:540px;">
+					<center><h2>URL LIST</h2></center> 
+					<div class="col-sm-10" style="margin-top: 25px; padding-bottom: 15px">
+						<select id="disabledSelect" class="form-control" size="15" style="cursor:pointer; font-size:20px; width:250px">
+							<option></option>
+							
+						</select>
+			
+			
+					</div>
+										
+                   
+				    <a class="paulund_modal" href="#"><button id="tt" type="button" class="btn btn-primary" style="margin-left:12px;"><span class="glyphicon glyphicon-plus"></span>Add Feed</button></a>  
+					<script>
+							$(document).ready(function(){
+									$('.paulund_modal').paulund_modal_box();
+							});
 
 
 
+					</script>  
+				    <!--<button id="tt" type="button" class="btn btn-primary" style="margin-left:12px;">
+                       Add feed
+                    </button>-->
+								
+					<button id="cpdf" type="button" class="btn btn-primary" style="margin-left:40px;" >
+                       Create PDF
+                    </button>
+					<br><br>
 
+         
+			</div>
 
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
-  <script src="./js/jquery.liquid-slider.min.js"></script>  -->   <script>
-    /**
-     * If you need to access the internal property or methods, use this:
-     * var api = $.data( $('#main-slider')[0], 'liquidSlider');
-     * console.log(api);
-     */
-	 //document.getElementById("1").innerHTML="<h1>Changed</h1>";
-    $('#main-slider').liquidSlider();
+			<div class="col-sm-3 col-md-6 col-lg-9" 
+				style="background-color: #dedef8;
+				box-shadow: inset 1px -1px 1px #444, 
+				inset -1px 1px 1px #444;">
+				<div class="bs-example">
+					<div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+					<!-- Carousel indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+							<li data-target="#myCarousel" data-slide-to="3"></li>
+							<li data-target="#myCarousel" data-slide-to="4"></li>
+							<li data-target="#myCarousel" data-slide-to="5"></li>
+							<li data-target="#myCarousel" data-slide-to="6"></li>
+							<li data-target="#myCarousel" data-slide-to="7"></li>
+							<li data-target="#myCarousel" data-slide-to="8"></li>
+							<li data-target="#myCarousel" data-slide-to="9"></li>
+							
+			
+			
+						</ol>   
+					
+						<!-- Carousel items -->
+						<div class="carousel-inner">
+							<div class="active item">
+								<h1 id="1"></h1>
+									<div class="carousel-caption" style="margin-top:25px;">
+										<a id="title1"  href="" style="text-decoration:none;"><h3><p id="1title">Title 1</p></h3></a>
+											<a id="img1" href=""><img id="1img" src="images/loading83.gif" class="img-thumbnail" align="left" ></img></a>
+											<p align="left"><h5 id="desc1">Description</h5></p>
+											<small><em><p id="pdate1" align="right">Posted Date</p></small></em>
+									</div>
+							</div>
+						
+							<div class="item">
+								<h1 id="2"></h1>
+									<div class="carousel-caption" style="margin-top:25px;">
+										<a id="title2"  href="" style="text-decoration:none;"><h3><p id="2title">Title 2</p></h3></a>
+											<a id="img2" href=""><img id="2img" src="images/loading83.gif" class="img-thumbnail"  align="left" ></img></a>
+											<p align="left"><h5 id="desc2">Description</h5></p>
+											<small><em><p id="pdate2" align="right">Posted Date</p></small></em>
+									</div>
+							</div>
+						
+							<div class="item">
+								<h1 id="3"></h1>
+									<div class="carousel-caption" style="margin-top:25px;">
+										<a id="title3"  href="" style="text-decoration:none;"><h3><p id="3title">Title 3</p></h3></a>
+											<a id="img3" href=""><img id="3img" src="images/loading83.gif" class="img-thumbnail"  align="left" ></img></a>
+											<p align="left"><h5 id="desc3">Description</h5></p>
+											<small><em><p id="pdate3" align="right">Posted Date</p></small></em>
+									</div>
+							</div>
+							
+							
+							<div class="item">
+								<h1 id="4"></h1>
+									<div class="carousel-caption" style="margin-top:25px;">
+										<a id="title4"  href="" style="text-decoration:none;"><h3><p id="4title">Title 4</p></h3></a>
+											<a id="img4" href=""><img id="4img" src="images/loading83.gif" class="img-thumbnail"  align="left" ></img></a>
+											<p align="left"><h5 id="desc4">Description</h5></p>
+											<small><em><p id="pdate4" align="right">Posted Date</p></small></em>
+									</div>
+							</div>
+							
+														
+							<div class="item">
+								<h1 id="5"></h1>
+									<div class="carousel-caption" style="margin-top:25px;">
+										<a id="title5"  href="" style="text-decoration:none;"><h3><p id="5title">Title 5</p></h3></a>
+											<a id="img5" href=""><img id="5img" src="images/loading83.gif" class="img-thumbnail"  align="left" ></img></a>
+											<p align="left"><h5 id="desc5">Description</h5></p>
+											<small><em><p id="pdate5" align="right">Posted Date</p></small></em>
+									</div>
+							</div>
+							
+							
+							
+							<div class="item">
+								<h1 id="6"></h1>
+									<div class="carousel-caption" style="margin-top:25px;">
+										<a id="title6"  href="" style="text-decoration:none;"><h3><p id="6title">Title 6</p></h3></a>
+											<a id="img6" href=""><img id="6img" src="images/loading83.gif" class="img-thumbnail" align="left" ></img></a>
+											<p align="left"><h5 id="desc6">Description</h5></p>
+											<small><em><p id="pdate6" align="right">Posted Date</p></small></em>
+									</div>
+							</div>
+							
+							
+							
+							<div class="item">
+								<h1 id="7"></h1>
+									<div class="carousel-caption" style="margin-top:25px;">
+										<a id="title7"  href="" style="text-decoration:none;"><h3><p id="7title">Title 7</p></h3></a>
+											<a id="img7" href=""><img id="7img" src="images/loading83.gif" class="img-thumbnail" align="left" ></img></a>
+											<p align="left"><h5 id="desc7">Description</h5></p>
+											<small><em><p id="pdate7" align="right">Posted Date</p></small></em>
+									</div>
+							</div>
+							
+							
+							
+							<div class="item">
+								<h1 id="8"></h1>
+									<div class="carousel-caption" style="margin-top:25px;">
+										<a id="title8"  href="" style="text-decoration:none;"><h3><p id="8title">Title 8</p></h3></a>
+											<a id="img8" href=""><img id="8img" src="images/loading83.gif" class="img-thumbnail" align="left" ></img></a>
+											<p align="left"><h5 id="desc8">Description</h5></p>
+											<small><em><p id="pdate8" align="right">Posted Date</p></small></em>
+									</div>
+							</div>
+							
+							
+							
+							<div class="item">
+								<h1 id="9"></h1>
+									<div class="carousel-caption" style="margin-top:25px;">
+										<a id="title9"  href="" style="text-decoration:none;"><h3><p id="9title">Title 9</p></h3></a>
+											<a id="img9" href=""><img id="9img" src="images/loading83.gif" class="img-thumbnail" align="left" ></img></a>
+											<p align="left"><h5 id="desc9">Description</h5></p>
+											<small><em><p id="pdate9" align="right">Posted Date</p></small></em>
+									</div>
+							</div>
+							
+							
+							
+							<div class="item">
+								<h1 id="10"></h1>
+									<div class="carousel-caption" style="margin-top:25px;">
+										<a id="title10"  href="" style="text-decoration:none;"><h3><p id="10title">Title 10</p></h3></a>
+											<a id="img10" href=""><img id="10img" src="images/loading83.gif" class="img-thumbnail" align="left" ></img></a>
+											<p align="left"><h5 id="desc10">Description</h5></p>
+											<small><em><p id="pdate10" align="right">Posted Date</p></small></em>
+									</div>
+							</div>
+							
+							
+							
+						</div>
+					
+						<!-- Carousel nav -->
+						<a class="carousel-control left" href="#myCarousel" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+						</a>
+						<a class="carousel-control right" href="#myCarousel" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+	    </div>
 
-  </script>
+      
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files 
+            as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootbox.js"></script>
+	    <script src="jquery.paulund_modal_box.js"></script>
+    
+	
+	<!--JavaScript for Updating URL List-->
+		<script>
+                
+                $('#cpdf').prop('disabled', true);                
 
+				
+				var s1="<option>";
+                var s2="";
+                var s3="</option>";
+                var recent,refreshrecent,refresh_s2="";
+                var result="";
+                var finalresult="";
+				
+				$.get("fetchdata.php",function(data,status){
+							if (data!=null){
+									         result=data.split(" ");
+											 for(var i=1;i<=result.length-2;i++)
+                                                   {
+                                                        // finalresult=result[i].split(".");
+                                                        s2=s2+s1+result[i]+s3; 
+                                                        //alert("Data: " + result.length + "\nStatus: " + status);
+                                                        //$("#kk").after("<p>"+finalresult[1]+"</p>");
+                                                        //   document.getElementById("dataa").innerHTML="<option>"+finalresult[1]+"</option>";
+                                                   } 
+                                                   document.getElementById("disabledSelect").innerHTML=s2;
+												   recent=result.pop();
+												   //document.getElementById("display_caption").innerHTML="<h2><center>"+selected+"</center></h2>";
+		                    } 
+							else{
+							
+									alert("No Data Available");
+							}
+				});
+				
+		    //refreshpage according to the feeds==========Interval===========
+			     
+				var refreshId = setInterval(function()
+													{
+                                                        var refreshresult="";
+				                                            $.get("fetchdata.php",function(data,status){
+							                                        if (data!=null){
+                                                                                        refreshresult=data.split(" ");
+                                                                                        refreshrecent=refreshresult.pop();
+                                                                                        if(parseInt(refreshrecent)>parseInt(recent)){
+                                                                                                    recent=refreshrecent;
+                                                                                                    for(var i=1;i<=refreshresult.length-1;i++)
+                                                                                                        {
+                                                                                                                // finalresult=result[i].split(".");
+                                                                                                                refresh_s2=refresh_s2+s1+refreshresult[i]+s3;
+                                                                                                                // alert("TTTTT :"+refresh_s2);   ===============available for the Backtracking
+                                                                                                                //alert(refreshresult[i]);                      
+                                                                                                                //alert("Data: " + result.length + "\nStatus: " + status);
+                                                                                                                //$("#kk").after("<p>"+finalresult[1]+"</p>");
+                                                                                                                //   document.getElementById("dataa").innerHTML="<option>"+finalresult[1]+"</option>";
+                                                                                                        }
 
-
-
-</article> 
-
-
-
-
-<nav >
-<h2><center><font color="red">URL List</font></center></h2>
-<select id="dataa" size="8"></select>
-              <script>
-                           
-                           var s1="<option>";
-                           var s2="";
-                           var s3="</option>";
-                           var recent,refreshrecent,refresh_s2="";
-                           var result="";
-                           var finalresult="";  
-                           
-                		                $.get("fetchdata.php",function(data,status){
-                                                                  
-							         if (data!=null){
-									           
-                                                                                     result=data.split(" ");
-                                                                                     for(var i=1;i<=result.length-2;i++)
-                                                                                     {
-                                                                                        // finalresult=result[i].split(".");
-                                                                                        s2=s2+s1+result[i]+s3; 
-                                                                                        //alert("Data: " + result.length + "\nStatus: " + status);
-                                                                                        //$("#kk").after("<p>"+finalresult[1]+"</p>");
-                                                                                        //   document.getElementById("dataa").innerHTML="<option>"+finalresult[1]+"</option>";
-                                                                                      } 
-                                                                                     document.getElementById("dataa").innerHTML=s2;
-                                                                                         
-                                                                                     //Styling the selectlist
-                                                                                     $("<style>").text("select{overflow:scroll; height:62%; background:#eeffff;} option{text-decoration: none; color: #000;display: block; width:185px; height: 10px;padding-bottom: 15px;color:blue;font-size:20px;cursor:pointer;  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease; -moz-transition: font-size 0.3s ease, background-color 0.3s ease;-o-transition: font-size 0.3s ease, background-color 0.3s ease;-ms-transition: font-size 0.3s ease, background-color 0.3s ease;transition: font-size 0.3s ease, background-color 0.3s ease;}option:hover {font-size: 30px;background: #f6f6f6;}option:last-child {border: none;}}").appendTo("head");
-                                                                                     //end of styling the selectlist
-
-                                                                                     //make first element of list selected
-                                                                                    // $('#dataa').find('option:eq(0)').prop('selected', true);//=============IMP====
-                                                                                     //var selected = $( "#dataa option:selected" ).text();
-                                                                                     //end of make first element of list selected
-
-
-
-                                                                                      recent=result.pop();
-                                                                                      //alert("data :"+recent);
-                                                                                      document.getElementById("hd").innerHTML="<h4><center>"+selected+"</center></h4>";
-										}
-									        else{
-									                 alert("No Data Available");
-                                                                                    }									 
-                                                                   });//end of get
-                                      
-                                                                             //document.getElementById("dataa").innerHTML=<a href="#">Zurich</a></li>
-                                                                             //Idont Know======= $( "p" ).click(function() {  alert("Clicked"); $( this ).slideUp();});
-                                                                    
- 				
-
-
-
-
-
-
-
-
-
-			  
-                                         //refreshpage according to the feeds==========Interval===========
-			  
-                                            var refreshId = setInterval(function()
-                                                                         {
-                                                                                    var refreshresult="";
-				                                                    $.get("fetchdata.php",function(data,status){
-							                                               if (data!=null){
-                                                                                                                           refreshresult=data.split(" ");  
-                                                                                                                           //alert(refreshresult);
-                                                                                                                           refreshrecent=refreshresult.pop();
-                                                                                                                           if(parseInt(refreshrecent)>parseInt(recent))
-                                                                                                                             {  
-                                                                                                                                   recent=refreshrecent;
-                                                                                                                                   for(var i=1;i<=refreshresult.length-1;i++)
-                                                                                                                                   {
-                                                                                                                                          // finalresult=result[i].split(".");
-                                                                                                                                          refresh_s2=refresh_s2+s1+refreshresult[i]+s3;
-                                                                                                                                         // alert("TTTTT :"+refresh_s2);   ===============available for the Backtracking
-                                                                                                                                         //    alert(refreshresult[i]);                      
-                                                                                                                                         //alert("Data: " + result.length + "\nStatus: " + status);
-                                                                                                                                         //$("#kk").after("<p>"+finalresult[1]+"</p>");
-                                                                                                                                         //   document.getElementById("dataa").innerHTML="<option>"+finalresult[1]+"</option>";
-                                                                                                                                   }
-                                                                                                                                 document.getElementById("dataa").innerHTML=refresh_s2;
-                                                                                                                                // $('#dataa').find('option:eq(0)').prop('selected', true);
-                                                                                                                                 var selected1 = $( "#dataa option:selected" ).text();
-                                                                                                                                // document.getElementById("hd").innerHTML="<center><h4>"+selected1+"</center></h4>";
-                                                                                                                                 refresh_s2="";
-
-                                                                                                                               //  alert("grate :"+recent+" and "+refreshrecent);
-                                                                                                                             }    
+																										document.getElementById("disabledSelect").innerHTML=refresh_s2;
+                                                                                                        // $('#dataa').find('option:eq(0)').prop('selected', true);
+                                                                                                        //var selected1 = $( "#dataa option:selected" ).text();
+                                                                                                        //document.getElementById("hd").innerHTML="<center><h4>"+selected1+"</center></h4>";
+                                                                                                        refresh_s2="";
+                                                                                                        bootbox.alert("URL List Updated...");
+                                                                                        }    
                                                                                         
-									                                                      // $("c").after("<h1>Navigation</h1>");
-                                                                                                                              //alert("Data: " + data + "\nStatus: " + status);
-                                                                                                                              // alert(s2);
 
-
-										                                    }
-									                                           else{
-									                                                    alert("No Data Available");
-                                                                                                                       }									 
-                                                                                           });
-                                                                                            //alert("Hello");
-									  
-									  
-									  
-                                                                    }, 5000);
-             </script>
-
-
-
-<script>
-       alert("Please Click on Feed and wait for few seconds... for Slideshow");
-                           /*change the slideshow when you click on the option*/                                             
-                           //function to get selected values					  
-           $('#dataa').click( function() {
-
-                //setting The images to default
+										                            }
+																	else{
+																			alert("No Data Available");
+                                                                    }									 
+                                                            });
+															
+                                                    }, 5000);
+		</script> 
+		 
+		 
+		 
+		 
+		 
+		 
+		<script>
+		bootbox.alert("Please Click on Feed and wait for few seconds... for Slideshow").find('.modal-content').css({'width':'350px'} );
+		
+		//change Entire slideshow When user click on the Option 
+		$('#disabledSelect').click( function() {
+		        $('#cpdf').prop('disabled', true);
+		
+				var feedurl=$( "#disabledSelect option:selected" ).text();
+                //setting title of each URL				
+				document.getElementById("display_caption").innerHTML="<h2><center>"+feedurl+"</center></h2>";
+				bootbox.alert("wait for few seconds...Slide Show Loading...");
+				
+				
+				//Display Images
+				$("#1img").show();
+				$("#2img").show();
+				$("#3img").show();
+				$("#4img").show();
+				$("#5img").show();
+				$("#6img").show();
+				$("#7img").show();$("#8img").show();$("#9img").show();$("#10img").show();
+				//end
+				
+				//setting The images to default
                 document.getElementById("1img").src="images/loading83.gif";
                 document.getElementById("img1").href="";
                 document.getElementById("2img").src="images/loading83.gif";
@@ -294,24 +381,16 @@ var a=10;//just fun
                 document.getElementById("10img").src="images/loading83.gif";
                 document.getElementById("img10").href="";
                 //end of Setting the images to default
-                              
-                                        
-
-
-
-
-
-
-                                                var test,test1="",linkk,title,da,descript,imgdisp,imglink,testlen,flg;
-                                                var imagee="";
-                                                var pdftitle="",pdfdate="",pdfdescription="",pdfcontent="";
-                                                var feedurl=$( "#dataa option:selected" ).text();
-                                                document.getElementById("hd").innerHTML="<center><h4>"+feedurl+"</center></h4>";
-                                                var link="title0",title1="0title",pdate="pdate0",desc="desc0",im="0img",iml="img0";
-			                       // alert("tested ok");
-			      $.post("test1.php",'val=' + feedurl,function(data){
-			         if(data!=null){
-
+				
+				
+				var test,test1="",linkk,title,da,descript,imgdisp,imglink,testlen,flg;
+                var imagee="";
+                var pdftitle="",pdfdate="",pdfdescription="",pdfcontent="";
+				var link="title0",title1="0title",pdate="pdate0",desc="desc0",im="0img",iml="img0";
+				
+				$.post("fpdf/ReadFeed.php",'val=' + feedurl,function(data){
+							if(data!=null){
+                                             
                                                test=data.split("<ending>");
                                                      testlen=test.length; // alert(testlen);         
                                                      if(testlen>11){testlen=11;}//alert(testlen); 
@@ -327,7 +406,7 @@ var a=10;//just fun
                                                                    document.getElementById(link).href =linkk;
                                                                   
                                                                    title=test1[1];
-                                                                            pdftitle=pdftitle+title+"<t><p>";
+                                                                       //     pdftitle=pdftitle+title+"<t><p>";
                                                                    document.getElementById(title1).innerHTML =title; 
                                                                    
                                                                    da=test1[2];
@@ -342,17 +421,20 @@ var a=10;//just fun
                                                                     //alert(linkk+"==="+title+"==="+da+"===="+descript+"==="+imagee+"===");
                                                                            // alert("Image is :"+i);
                                                                    //variable that contain the value for pdf content
-                                                                   pdfcontent=pdfcontent+title+"<p>"+linkk+descript+"<t>";
+                                                                  // pdfcontent=pdfcontent+title+"<p>"+linkk+descript+"<t>";
                                      
                                                         }
-                                                             
+                                                         //document.getElementById("pdate1").innerHTML ="The Change is made1"
+														// document.getElementById("desc2").innerHTML ="The Change is made"; 
+														// document.getElementById("desc3").innerHTML ="The Change is made"; 
+														// document.getElementById("desc4").innerHTML ="The Change is made";     
                                                                 //create pdf                                                         
-                                                                if(pdfcontent){
+                                                                /*if(pdfcontent){
                                                                    $.post('fpdf/pdfcreator.php', 'val=' + pdfcontent, function (response) {
                                                                          if(response){
                                                                                }
                                                                    });
-                                                                }
+                                                                }*/
 
 
    
@@ -367,13 +449,15 @@ var a=10;//just fun
                                                                                          document.getElementById(iml).href =imglink[i];
                                                                                          if(imgdisp[i]!=" ")
                                                                                             {
-                                                                                                     
-                                                                                                 document.getElementById(im).src =imgdisp[i];
-   
+																							                                                                                                   
+                                                                                                document.getElementById(im).src =imgdisp[i];
+																							     $("#"+im).show();
                                                                                             }
                                                                                            else
                                                                                              {
-                                                                                                document.getElementById(im).src="images/microo.png";
+                                                                                                document.getElementById(im).src="";
+																								document.getElementById(im).class="";
+																								$("#"+im).hide();
                                                                                                    
 
                                                                                              }
@@ -382,17 +466,20 @@ var a=10;//just fun
                                                                                     }
                                                                                   
                                                                              }
+																			 $('#cpdf').prop('disabled',false);
                                                                   });
                                                                   
                                                                   if(test.length<10)//checking for the slides less than 10
                                                                      {
                                                                        for(var i=test.length-1;i<10;i++)
                                                                          {
-                                                                           document.getElementById((i+1).toString()+"title").innerHTML ="NOT AVAILABLE";
+                                                                           document.getElementById((i+1).toString()+"title").innerHTML ="";
                                                                            document.getElementById("title"+(i+1).toString()).href ="";
 
-                                                                           document.getElementById((i+1).toString()+"img").src="images/microo.png";
-                                                                           document.getElementById("img"+(i+1).toString()).href="";
+																		   $("#"+(i+1).toString()+"img").hide();
+																		   document.getElementById((i+1).toString()).innerHTML="NOT AVAILABLE";
+                                                                         //  document.getElementById((i+1).toString()+"img").src="images/microo.png";
+                                                                         //  document.getElementById("img"+(i+1).toString()).href="";
                                                                            document.getElementById("pdate"+(i+1).toString()).innerHTML="";
                                                                            document.getElementById("desc"+(i+1).toString()).innerHTML="";
                                                                           
@@ -412,66 +499,42 @@ var a=10;//just fun
                                               }							 
 									   
                    });
-
-
-
-                                                                                                           
-             }); //end of selected values function
-			    
-</script>
-
-
-
-
-
-   </nav>
-  </div>
-
-
-
-<footer>
-
-
-
-
-<script>alert("the value is :"+selected);</script>
-<style type="text/css">button{cursor:pointer;padding:4px 10px;background:#35b128;border:1px solid #33842a;-moz-border-radius: 10px;-webkit-border-radius: 10px;border-radius: 10px;/*give the button a drop shadow*/-webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);-moz-box-shadow: 0 0 4px rgba(0,0,0, .75);box-shadow: 0 0 4px rgba(0,0,0, .75);/*style the text*/color:#f3f3f3;font-size:1.1em;}'+
-			 'button:focus{background-color :#399630;-webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);-moz-box-shadow: 0 0 1px rgba(0,0,0, .75); box-shadow: 0 0 1px rgba(0,0,0, .75);}</style>   <a class="paulund_modal" href="#"><button>Add Feed</button></a>   
-
-
-
-<script>
-
-$(document).ready(function(){
-	$('.paulund_modal').paulund_modal_box();
-});
-
-
-
-</script>  
-
-
-<button id="cpdf" type="button" style="float:right;">Create PDF</button> 
-<button id="about" type="button" >About US</button> 
-
-
-
-
-
-
-<script>
-var x="fpdf/Mypdf.pdf";
-
-$( "#about").click(function() {
-window.open("http://nileshatkari777.webs.com/");
-});
-
-
-$( "#cpdf").click(function() {
-alert("wait for few seconds... pdf is generating...");
-window.open("fpdf/Mypdf.pdf");
-
-
-});
-</script>
-</footer>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				// bootbox.alert(feedurl);
+		});
+		
+	</script>
+	
+	
+	<script>
+	
+				$( "#cpdf").click(function() {
+								//bootbox.alert("wait for few seconds... pdf is generating...");
+								window.open("fpdf/Mypdf.pdf");
+                });
+	</script>
+   
+      <center><p>NOTE:After clicking on AddFeed Click on ? button for generating feed otherwise Enter feed manually<p></center>
+   </body>
+</html>
