@@ -3,6 +3,8 @@ feedreader version 1.0  08/08/2014
 ## Welcome To feedreader Portal ##
 
 ###Genereal Usage Notes###
+---------------------------------------------------------------    
+
 **Feed Reader** is the portal for Getting the feed Data like news in Slide Show.
  -  So You can access it in your browser without any special installation for software.
  -  While using that portal You have to wait certain time whenever the notifications are generated.
@@ -19,6 +21,7 @@ It has facilities like
 **RSS Feed Slideshow**
 
 The RSS Slide Show Display The feed Content in Presentation form You have navigation Buttons To Move from slide to slide.
+---------------------------------------------------------------    
 
 ###feedreder can be reached at : ###
 Voice: 	   +91 9175535568
