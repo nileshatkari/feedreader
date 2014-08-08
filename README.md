@@ -1,4 +1,4 @@
-feedreader version 1.0  08/08/2014
+feedreader   Date:08/08/2014
 
 ## Welcome To feedreader Portal ##
 
