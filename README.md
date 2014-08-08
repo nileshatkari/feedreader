@@ -1,11 +1,11 @@
-feedreader version 1.0 08/08/2014
+feedreader version 1.0  08/08/2014
 
 ## Welcome To feedreader Portal ##
 
 ###Genereal Usage Notes###
 **Feed Reader** is the portal for Getting the feed Data like news in Slide Show.
--So You can access it in your browser without any special installation for software.
--While using that portal You have to wait certain time whenever the notifications are generated.
+ -  So You can access it in your browser without any special installation for software.
+ -  While using that portal You have to wait certain time whenever the notifications are generated.
 
 **URL List**
 
@@ -20,15 +20,18 @@ It has facilities like
 
 The RSS Slide Show Display The feed Content in Presentation form You have navigation Buttons To Move from slide to slide.
 
-**Demo Link of Portal**
+###feedreder can be reached at : ###
+Voice: 	   +91 9175535568
+Portal URL:http://nileshatkari777.comxa.com/
+E-mail:    nileshatkari777@gmail.com
+
 You will get to access of portal at [http://nileshatkari777.comxa.com/](http://nileshatkari777.comxa.com/ "Title") link.
-when link is opened in browser follow the instruction as given in previous content
+if your browser not allowing to click on link then please copy and paste the url in new tab and follow the instructions.
 
 ---------------------------------------------------------------    
 
-		Have a lot of fun! | Viel Spaß! | Bonne Chance!
+		Have a lot of fun! | Nilesh Atkari
 
-Enjoy
 
 
 
