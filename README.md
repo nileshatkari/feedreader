@@ -19,8 +19,7 @@ It has facilities like
     It's facility for creating soft content more redable for user By clicking on Create PDF Button User is able to create the PDF of Slide Show with The clicable Title links.
 
 **RSS Feed Slideshow**
-
-The RSS Slide Show Display The feed Content in Presentation form You have navigation Buttons To Move from slide to slide.
+    The RSS Slide Show Display The feed Content in Presentation form You have navigation Buttons To Move from slide to slide.
 ---------------------------------------------------------------    
 
 ###feedreder can be reached at : ###
