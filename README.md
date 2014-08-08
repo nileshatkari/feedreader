@@ -22,7 +22,9 @@ The RSS Slide Show Display The feed Content in Presentation form You have naviga
 
 ###feedreder can be reached at : ###
 Voice: 	   +91 9175535568
+
 Portal URL:http://nileshatkari777.comxa.com/
+
 E-mail:    nileshatkari777@gmail.com
 
 You will get to access of portal at [http://nileshatkari777.comxa.com/](http://nileshatkari777.comxa.com/ "Title") link.
